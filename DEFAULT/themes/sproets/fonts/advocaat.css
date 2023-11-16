@@ -1,0 +1,12 @@
+/* Webfont: Advocaat-Regular */@font-face {
+    font-family: 'Advocaat';
+    src: url('Advocaat-Regular.eot'); /* IE9 Compat Modes */
+    src: url('Advocaat-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Advocaat-Regular.woff') format('woff'), /* Modern Browsers */
+         url('Advocaat-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Advocaat-Regular.svg#Advocaat-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

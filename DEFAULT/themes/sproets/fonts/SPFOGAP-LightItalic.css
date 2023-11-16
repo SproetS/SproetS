@@ -1,0 +1,12 @@
+/* Webfont: SPFOGAP-LightItalic */@font-face {
+    font-family: 'SPFOGAPLight';
+    src: url('SPFOGAP-LightItalic.eot'); /* IE9 Compat Modes */
+    src: url('SPFOGAP-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('SPFOGAP-LightItalic.woff') format('woff'), /* Modern Browsers */
+         url('SPFOGAP-LightItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('SPFOGAP-LightItalic.svg#SPFOGAP-LightItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

@@ -1,0 +1,915 @@
+/**
+ * 
+ * CSS voor sproets theme van sproets.nl 
+ *
+ * INHOUD
+ *
+ * BASIS............Basis dingen.
+ * Basis settings.
+ * Basis lay-out.
+ * Onderhoudspagina.
+ *
+ * TYPO.............Tekst.
+ * Fonts
+ * Tekst.
+ * Headings.
+ * Lijsten.
+ * Tabellen.
+ * Menu's.
+ *
+ * COMPONENTEN......Stijlen van diverse componenten.
+ * Header.
+ * Footer.
+ * Blokken.
+ * 
+ * UI...............formulieren, admin, ed.
+ * Menu's.
+ * Tabs.
+ * Statusberichten.
+ * CKEditor.
+ * Formulieren.
+ * Toolbar.
+ * Node edit.
+ * Vertical tabs.
+ * Modulepagina.
+ * Onderhoudspagina.
+ * Contactpagina.
+ *
+ * TRUMPS...........Viezigheden.
+ *
+ */
+
+
+
+
+
+/*---------------------------*\
+  #BASIS
+\*---------------------------*/ 
+  
+
+/* --- Basis settings --- */
+
+html {
+  font-size: 10px;
+  color: #7A7870;
+  background-color: #fbfbfb;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.125;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  color: #7A7870;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* --- Basis layout --- */
+
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+}
+
+
+/* --- Grid --- */
+
+.layout-container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.layout-container {
+  grid-template-rows:  48px  auto  min-content;
+}
+
+.lay-out-container-front {
+    grid-template-rows:  min-content  auto  min-content;
+  }
+
+
+/* --- Grid elementen --- */
+
+.header {
+  background-color: transparent;
+  grid-area: header;
+}
+
+.header {
+  height: 48px;
+  background-position: 50% 50%;
+}
+
+.main {
+  justify-self: stretch;
+  grid-area: main;
+}
+
+.main {
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.region.region-content {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 2em;
+}
+
+@media screen and (max-width: 719px) {
+  .region.region-content {
+    padding-right: 0.5em;
+    padding-right: 0.5rem
+  }
+}
+
+
+/*---------------------------*\
+  #TYPO
+\*---------------------------*/ 
+
+
+/* --- Fonts --- */
+
+/* --- Webfont GAP --- */
+
+
+
+/* Webfont: GAP-BoldItalic */@font-face {
+    font-family: 'GAP';
+    src: url('fonts/GAP-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/GAP-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/fonts/GAP-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('fonts/GAP-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/GAP-BoldItalic.svg#GAP-BoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: GAP-Bold */@font-face {
+    font-family: 'GAP';
+    src: url('fonts/GAP-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/fonts/fonts/GAP-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/GAP-Bold.woff') format('woff'), /* Modern Browsers */
+         url('fonts/fonts/GAP-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/GAP-Bold.svg#GAP-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: GAP-Italic */@font-face {
+    font-family: 'GAP';
+    src: url('fonts/fonts/GAP-Italic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/GAP-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/GAP-Italic.woff') format('woff'), /* Modern Browsers */
+         url('vGAP-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/GAP-Italic.svg#GAP-Italic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: GAP-Regular */@font-face {
+    font-family: 'GAP';
+    src: url('fonts/GAP-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/GAP-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/GAP-Regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/GAP-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/GAP-Regular.svg#GAP-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: GAPMono-Bold */@font-face {
+    font-family: 'GAPMono';
+    src: url('fonts/GAPMono-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/GAPMono-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/GAPMono-Bold.woff') format('woff'), /* Modern Browsers */
+         url('fonts/GAPMono-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/GAPMono-Bold.svg#GAPMono-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: GAPMono-BoldItalic */@font-face {
+    font-family: 'GAPMono';
+    src: url('fonts/GAPMono-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/GAPMono-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/GAPMono-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('fonts/GAPMono-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/GAPMono-BoldItalic.svg#GAPMono-BoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: GAPMono-Italic */@font-face {
+    font-family: 'GAPMono';
+    src: url('fonts/GAPMono-Italic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/GAPMono-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/GAPMono-Italic.woff') format('woff'), /* Modern Browsers */
+         url('fonts/GAPMono-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/GAPMono-Italic.svg#GAPMono-Italic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: GAPMono-Regular */@font-face {
+    font-family: 'GAPMono';
+    src: url('fonts/GAPMono-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/GAPMono-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/GAPMono-Regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/GAPMono-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/GAPMono-Regular.svg#GAPMono-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: GAPMono-Regular */@font-face {
+    font-family: 'GAPMono';
+    src: url('fonts/GAPMono-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/GAPMono-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/GAPMono-Regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/GAPMono-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/GAPMono-Regular.svg#GAPMono-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: GAPSlabSerif-Bold */@font-face {
+    font-family: 'GAPSlabSerif';
+    src: url('fonts/GAPSlabSerif-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/GAPSlabSerif-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/GAPSlabSerif-Bold.woff') format('woff'), /* Modern Browsers */
+         url('fonts/GAPSlabSerif-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/GAPSlabSerif-Bold.svg#GAPSlabSerif-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: GAPSlabSerif-BoldItalic */@font-face {
+    font-family: 'GAPSlabSerif';
+    src: url('fonts/GAPSlabSerif-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/GAPSlabSerif-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/GAPSlabSerif-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('fonts/GAPSlabSerif-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/GAPSlabSerif-BoldItalic.svg#GAPSlabSerif-BoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: GAPSlabSerif-Italic */@font-face {
+    font-family: 'GAPSlabSerif';
+    src: url('fonts/GAPSlabSerif-Italic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/GAPSlabSerif-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/GAPSlabSerif-Italic.woff') format('woff'), /* Modern Browsers */
+         url('fonts/GAPSlabSerif-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/GAPSlabSerif-Italic.svg#GAPSlabSerif-Italic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: GAPSlabSerif-Regular */@font-face {
+    font-family: 'GAPSlabSerif';
+    src: url('fonts/GAPSlabSerif-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/GAPSlabSerif-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/GAPSlabSerif-Regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/GAPSlabSerif-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/GAPSlabSerif-Regular.svg#GAPSlabSerif-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+
+@font-face {
+    font-family: 'advocaat_script';
+    src: url('../fonts/advocaat-script.eot');
+    src: url('../fonts/advocaat-script.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/advocaat-script.woff') format('woff'),
+         url('../fonts/advocaat-script.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* --- Algemeen --- */
+
+body {
+  font-family: 'GAPMono', Consolas, Menlo, Courier, monospace;
+  font-variant-numeric: oldstyle-nums;
+  -moz-font-feature-settings: "onum";
+  -webkit-font-feature-settings: "onum";
+  font-feature-settings: "onum";
+  color: #7A7870;
+}
+
+
+/* --- Tekststijlen --- */
+
+/* Paragrafen */
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.125;
+}
+
+code,
+pre {
+  font-family: 'GAPMono', Consolas, Menlo, Courier, monospace;
+  color: #444;
+  background-color: #f0f0f0;
+}
+
+code {
+  padding: 1px 4px;
+}
+
+pre {
+  padding: 1px 2em;
+}
+
+
+/* Inline */
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+blockquote {
+  font-style: italic;
+  padding-left: 0.125em;
+}
+
+
+/* --- Links --- */
+
+a {
+  text-decoration: none;
+  color: #7DAAC0;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #a34d97;
+}
+
+
+/* --- Headings --- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.6rem;
+  line-height: 1.125;
+  margin-block-start: 1.25rem;
+  margin-block-end: 1rem;
+}
+
+h1 {
+  color: #70605c;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h1,
+h2 {
+  letter-spacing: 0.875rem;
+}
+
+h2 {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-feature-settings: "c2sc", "smcp";
+  margin-block-start: 1.25rem;
+  margin-block-end: 1rem;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+h4 {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-feature-settings: "c2sc", "smcp";
+  font-weight: 700;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-block-start: 1.25rem !important;
+  margin-block-end: 1rem !important;
+}
+
+h6 {
+  font-style: italic;
+}
+
+hr {
+  display: block; 
+  height: 1px;
+  border: 0;
+  border-top: 1px dashed #ccc;
+  margin: 1em 0; 
+  padding: 0;
+}
+
+
+/* Lijsten */
+
+.links.inline ul li {
+  list-style: none;
+}
+
+ul.links.inline {
+  padding-right: 1em;
+  text-align: right;
+}
+
+li.book-printer a {
+  color: #7a80a0;
+}
+
+li.book-add-child a {
+  color: #a3a34d;
+}
+
+.links.inline li {
+  display: inline;
+  padding-left: 1em;
+}
+
+li.comment-delete a {
+  color: #e08546;
+}
+
+li.comment-edit a {
+  color: #7a80a0;
+}
+
+li.comment-reply a {
+  color: #a3a34d;
+}
+
+li.comment-add a {
+  color: #a3a34d;
+}
+
+
+/* --- tabellen --- */
+
+table {
+  width: 100%;
+  font-variant-numeric: tabular-nums;  
+}
+
+thead {
+	border-bottom: 1px solid #ccc;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-feature-settings: "c2sc", "smcp";
+}
+
+table.sticky-header {
+	background-color: #fbfbfb;
+}
+
+td {
+  padding: 0.25em;    
+}
+
+
+
+
+
+/*---------------------------*\
+  #COMPONENTEN
+\*---------------------------*/ 
+
+
+/* --- Header --- */
+
+.region.region-header {
+	padding-left: 2em;
+}
+
+
+/* --- Footer --- */
+
+.region.region-footer {
+	position: relative ;
+	bottom: 0;
+	padding-left: 2em;
+	padding-right: 2em;
+	vertical-align: bottom;
+	height: 100%;
+}
+
+/* --- Blokken --- */
+
+#block-copyright {
+  text-align: right;
+}
+
+.entity-pager-list,
+.messages,
+.breadcrump {
+  margin-top: 2rem;
+  border-top: 1px #ccc dashed;
+}
+
+
+/*---------------------------*\
+  #UI
+\*---------------------------*/
+
+
+/* -- Menu's -- */
+
+/* Main menu */
+
+a.is-active {
+  color: #a3a34d;
+}
+
+nav#block-sproets-main-menu ul.menu {
+	margin-left: 0;
+}
+
+nav#block-sproets-main-menu ul li {
+  list-style: none;
+}
+
+nav#block-sproets-main-menu ul {
+  /*padding-left: 1em;*/
+}
+
+nav#block-sproets-main-menu li {
+  display: inline;
+  padding-right: 1em;
+}
+
+
+/* --- Small Caps --- */
+
+.views-field-view-node,
+.entity-pager,
+.field__label,
+.button,
+.fieldset-legend,
+label {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-feature-settings: "c2sc", "smcp";
+}
+
+
+/* Accountmenu */
+
+nav#block-sproets-account-menu .menu {
+	text-align: right;
+}
+	
+nav#block-sproets-account-menu ul li {
+  list-style: none;
+}
+
+nav#block-sproets-account-menu li {
+  display: inline;
+  padding-right: 1em;
+}
+
+
+/* --- Tabs --- */
+
+.tabs a {
+	background-color: transparent; 	
+}
+
+.tabs a.is-active,
+.tabs a:focus,
+.tabs a:hover {
+	background-color: #f1f1f1; 	
+}
+
+.tabs > li {
+  margin-right: 0;
+	margin-left: 0;
+	font-variant: small-caps;
+	text-transform: lowercase;
+  font-feature-settings: "c2sc", "smcp";
+}
+
+
+/* --- Statusberichten --- */
+
+div aria-label="Statusbericht" {
+  background-color: #ccc;
+}
+
+
+/* --- CKEditor --- */
+
+div#iframe.cke_wysiwyg.cle_reset.body.cke_editable.cke_editable_themed.cke_contents_ltr,
+iframe.cke_wysiwyg.cle_reset,
+div#cke_1_contents.cke_reset,
+iframe.body.cke_editable,
+textarea.cke_sourcetextarea.cke_source
+ {
+  font-family: 'GAPMono', Consolas, Menlo, Courier, monospace !important;
+}
+
+.cke_wysiwyg_frame, .cke_wysiwyg_div {
+  background-color: transparent;
+}
+
+
+/* --- formulieren --- */
+
+.form-actions {
+	text-align: right;
+}
+
+
+/* --- Toolbar --- */
+
+nav#toolbar-bar.toolbar-bar,
+.toolbar,
+.toolbar .toolbar-tray-vertical {
+  background-color: #fbfbfb;
+  box-shadow: none;
+}
+
+.toolbar,
+.toolbar-bar,
+.toolbar-tray-horizontal,
+.toolbar-tray-vertical,
+.toolbar .toolbar-bar .toolbar-item {
+  font-family: 'GAPMono', Consolas, Menlo, Courier, monospace;
+  box-shadow: none;
+  color: #7A7870;
+}
+
+.toolbar .toolbar-bar {
+  box-shadow: none;
+  border-bottom: #ccc solid 1px;
+}
+
+.toolbar .toolbar-menu {
+  background-color: #fbfbfb;
+}
+
+.toolbar .toolbar-tray-horizontal {
+  box-shadow: none;
+  color: #7A7870;
+  background-color: #fbfbfb;
+}
+.toolbar .toolbar-tray-vertical {
+  border-right: 1px solid #ccc;
+}
+
+
+/* --- Node edit --- */
+
+#edit-field-bestanden-wrapper {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+}
+
+
+/* --- Vertical tabs --- */
+.vertical-tabs {
+}
+
+div.entity-meta.vertical-tabs__panes {
+  padding: 1em;
+}
+
+.filter-wrapper {
+}
+
+
+#edit-title-wrapper,
+#edit-body-wrapper,
+#edit-field-tags-wrapper {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.tabledrag-toggle-weight-wrapper {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+
+/* --- Buttons --- */
+
+.button {
+  border: 1px solid #ccc;
+}
+
+
+/* --- Messages --- */
+
+.messages {
+
+}
+
+.messages--warning,
+.messages--status,
+.messages--error {
+  box-shadow: none;
+  border: 0;
+  background-color: transparent;
+}
+
+.messages--warning {
+  color: #bdb76b;
+}
+
+.messages--status {
+  color: #a3a34d;
+}
+
+.messages--error {
+  color: #cd5c5c;
+}
+
+
+/* --- Module pagina --- */
+
+.system-modules details {
+  white-space: normal;
+  font-size: 0.925em;
+  color: #bfb682;
+}
+
+.system-modules details[open] {
+  
+}
+
+td.module {
+  font-size: 0.875em;
+  color: #bfb682;
+}
+
+}
+select,
+input {
+  font-size: 0.875em;
+}
+
+
+/* --- Onderhoudspagina --- */
+
+body.maintenance-page img {
+  max-width: 64px;
+  height: auto;
+}
+
+body.maintenance-page img a:hover {
+  background-color: transparent;
+}
+
+/* --- Contactpagina --- */
+
+#edit-subject-0-value,
+#edit-name,
+#edit-mail {
+	width: 99%;
+}
+
+
+/* --- Viewspagina --- */
+
+.views-ui-view-name {
+  font-size: 0.75em;
+}
+
+/* --- Praatjes pagina --- */
+
+.praatjes .views-row {
+  border-bottom: #ccc dashed 1px;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+
+
+
+
+/*---------------------------*\
+  #TRUMPS
+\*---------------------------*/ 
+
+
+
+
+
+.youtube-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.youtube-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+	width: 100%;
+	height: auto;
+}
+
+.media-oembed-content {
+	min-width: 100%;
+}
+
+.media--type-remote-video media--view-mode-default {
+	min-width: 100%;
+}
+
+
+/* Thumbnails voor Colorbox */
+
+.field__item { /* item */
+  flex: 0 1 auto;
+  /*margin-left: 0.25em;
+  margin-right: 0.25em;*/
+}
+
+.field--name-field-pagina-afbeeldingen {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.praatje-lees-verder {
+}
+
+
+/* Logo grid  */
+
+.views-field-field-logo {
+  padding: 1em;
+  vertical-align: middle;
+  text-align: center; 
+}
+
+.views-field-field-logo .field-content {
+  vertical-align: middle;
+  text-align: center;
+}

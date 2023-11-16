@@ -1,0 +1,12 @@
+/* Webfont: GAP-BoldItalic */@font-face {
+    font-family: 'GAP';
+    src: url('GAP-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('GAP-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('GAP-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('GAP-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('GAP-BoldItalic.svg#GAP-BoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+

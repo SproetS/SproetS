@@ -1,0 +1,107 @@
+/* --- Typography --- */
+
+
+/* - Regular - */
+
+@font-face {
+  font-family: "GAP Zuid";
+  src:
+    local("GAP Zuid"),
+    url("fonts/GAPZuid-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GAP Zuid";
+  src:
+    local("GAP Zuid"),
+    url("fonts/GAPZuid-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GAP Zuid";
+  src:
+    local("GAP Zuid"),
+    url("fonts/GAPZuid-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "GAP Zuid";
+  src:
+    local("GAP Zuid"),
+    url("fonts/GAPZuid-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* - Monospace - */
+
+@font-face {
+  font-family: "GAP Mono";
+  src:
+    local("GAP Mono"),
+    url("fonts/GAPMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GAP Mono";
+  src:
+    local("GAP Mono"),
+    url("fonts/GAPMono-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GAP Mono";
+  src:
+    local("GAP Mono"),
+    url("fonts/GAPMono-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "GAP mono";
+  src:
+    local("GAP mono"),
+    url("fonts/GAPmono-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  font-family: "GAP Zuid" !important;
+  font-feature-settings: "calt" 1, "liga" 1, "rlig" 1, "rvrn" 1, "kern" 1, "rclt" 1, "dlig" 1, "onum" 1;
+}
+
+code,
+pre {
+  font-family: "GAP Mono";
+  font-feature-settings: "calt" 0, "liga" 0, "rlig" 0, "rvrn" 0, "kern" 0, "rclt" 0, "dlig" 0, "onum" 0;
+}
+
+/* --- Admin Ui ---  */
+
+body.adminimal,
+.adminimal,
+.toolbar {
+  font-family: "GAP Zuid" !important;
+  font: "GAP Zuid" !important;
+  font-feature-settings: "calt" 1, "liga" 1, "rlig" 1, "rvrn" 1, "kern" 1, "rclt" 1, "dlig" 1, "onum" 1;
+}
+
+
+#toolbar-administration {
+  font-family: "GAP Zuid" !important;
+  font-feature-settings: "calt" 1, "liga" 1, "rlig" 1, "rvrn" 1, "kern" 1, "rclt" 1, "dlig" 1, "onum" 1;
+  font-size: medium;
+}

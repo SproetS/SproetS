@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <g id="b" data-name="vak_2">
+    <rect width="512" height="512" fill="#0f0f0d"/>
+  </g>
+  <g id="c" data-name="letters">
+    <polygon points="288 128 288 64 64 64 64 448 224 448 224 256 288 256 288 192 224 192 224 128 288 128" fill="#fff"/>
+    <polygon points="288 64 288 256 224 256 224 320 288 320 288 384 224 384 224 448 448 448 448 64 288 64" fill="#00c3af"/>
+  </g>
+</svg>

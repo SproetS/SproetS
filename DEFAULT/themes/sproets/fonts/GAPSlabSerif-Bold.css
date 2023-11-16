@@ -1,0 +1,12 @@
+/* Webfont: GAPSlabSerif-Bold */@font-face {
+    font-family: 'GAPSlabSerif';
+    src: url('GAPSlabSerif-Bold.eot'); /* IE9 Compat Modes */
+    src: url('GAPSlabSerif-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('GAPSlabSerif-Bold.woff') format('woff'), /* Modern Browsers */
+         url('GAPSlabSerif-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('GAPSlabSerif-Bold.svg#GAPSlabSerif-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+

@@ -1,0 +1,14 @@
+name: 'PWA Service Worker'
+type: module
+description: 'Enables the service worker for the creation of an effective offline experience for your pwa.'
+package: PWA
+core_version_requirement: ^9.3 || ^10
+php: ^8
+configure:
+dependencies:
+  - pwa:pwa
+
+# Information added by Drupal.org packaging script on 2023-09-25
+version: '2.1.0-beta2'
+project: 'pwa'
+datestamp: 1695646236

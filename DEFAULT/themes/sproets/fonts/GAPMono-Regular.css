@@ -1,0 +1,13 @@
+/* Webfont: GAPMono-Regular */@font-face {
+    font-family: 'GAPMono';
+    src: url('GAPMono-Regular.eot'); /* IE9 Compat Modes */
+    src: url('GAPMono-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('GAPMono-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('GAPMono-Regular.woff') format('woff'), /* Modern Browsers */
+         url('GAPMono-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('GAPMono-Regular.svg#GAPMono-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

@@ -1,0 +1,12 @@
+/* Webfont: Advocaat-Italic */@font-face {
+    font-family: 'Advocaat';
+    src: url('Advocaat-Italic.eot'); /* IE9 Compat Modes */
+    src: url('Advocaat-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Advocaat-Italic.woff') format('woff'), /* Modern Browsers */
+         url('Advocaat-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Advocaat-Italic.svg#Advocaat-Italic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

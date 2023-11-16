@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+/*!
+ * Style for Bootstrap 5 'Aan Zee' subtheme
+ * https://smijn.nl
+ */
+
+
+
+/* --- Layout --- */
+
+.container720 {
+  max-width: 720px;
+}
+
+
+
+/* --- Typography --- */
+
+
+/* - Regular - */
+
+@font-face {
+  font-family: "GAP Zuid";
+  src:
+    local("GAP Zuid"),
+    url("../fonts/GAPZuid-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GAP Zuid";
+  src:
+    local("GAP Zuid"),
+    url("../fonts/GAPZuid-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GAP Zuid";
+  src:
+    local("GAP Zuid"),
+    url("../fonts/GAPZuid-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "GAP Zuid";
+  src:
+    local("GAP Zuid"),
+    url("../fonts/GAPZuid-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* - Monospace - */
+
+@font-face {
+  font-family: "GAP Mono";
+  src:
+    local("GAP Mono"),
+    url("../fonts/GAPMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GAP Mono";
+  src:
+    local("GAP Mono"),
+    url("../fonts/GAPMono-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GAP Mono";
+  src:
+    local("GAP Mono"),
+    url("../fonts/GAPMono-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "GAP mono";
+  src:
+    local("GAP mono"),
+    url("../fonts/GAPmono-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  font-family: "GAP Zuid";
+  font-feature-settings: "calt" 1, "liga" 1, "rlig" 1, "rvrn" 1, "kern" 1, "rclt" 1, "dlig" 1, "onum" 1;
+}
+
+code,
+pre {
+  font-family: "GAP Mono";
+  font-feature-settings: 0;
+}
+
+
+
+
+
+
+/* --- Typografie --- */
+
+
+p {
+
+}
+
+blockquote {
+  font-style: italic;
+  padding-left: 1em;
+  border-left: 1px solid #aaa;
+}
+
+
+.navbar-brand .site-slogan {
+  font-size: 1.4rem;
+  color: #808080;
+}
+
+.carousel-caption h3 {
+  font-weight: 700;
+}
+
+.carousel-caption a {
+  color: #fff;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px #808080;
+}
+
+
+/* --- Blokken --- */
+
+video,
+.view-projecten-carousel,
+.block-views-blockprojecten-carousel-block-projecten-alles,
+#views-bootstrap-projecten-carousel-block-projecten-alles
+ {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  text-align: center;
+  /*background-color: #444;*/
+}
+
+#views-bootstrap-projecten-carousel-block-projecten-alles {
+  max-height: 12rem;
+}
+
+.block-aan_zee {
+  background-color: #d9d8d7;
+  padding: 2em;
+}
+
+#block-aanzee-page-title,
+.navbar,
+#block-aanzee-content,
+#block-block-bio {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+#block-aanzee-page-title {
+  padding-top: 1em;
+}
+
+.site-logo img {
+  width: 80px;
+  height: auto;
+}
+
+.block-field-blocknodeprojectfield-project-poster-afbeelding {
+  text-align: center;
+}
+
+.carousel-caption {
+  padding-bottom: 0;
+  bottom: 0.25rem;
+}
+
+
+.project-media {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.project-posterafbeelding {
+  margin-bottom: 2rem;
+}
+
+/* --- Admin Ui ---  */
+
+body.adminimal,
+.adminimal,
+.toolbar {
+  font-family: "GAP Zuid" !important;
+  font: "GAP Zuid" !important;
+  font-feature-settings: "calt" 1, "liga" 1, "rlig" 1, "rvrn" 1, "kern" 1, "rclt" 1, "dlig" 1, "onum" 1;
+}
+
+
+#toolbar-administration {
+  font-family: "GAP Zuid" ;
+  font-feature-settings: "calt" 1, "liga" 1, "rlig" 1, "rvrn" 1, "kern" 1, "rclt" 1, "dlig" 1, "onum" 1;
+  font-size: medium;
+}

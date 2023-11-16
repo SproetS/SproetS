@@ -1,0 +1,12 @@
+/* Webfont: GAP-Bold */@font-face {
+    font-family: 'GAP';
+    src: url('GAP-Bold.eot'); /* IE9 Compat Modes */
+    src: url('GAP-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('GAP-Bold.woff') format('woff'), /* Modern Browsers */
+         url('GAP-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('GAP-Bold.svg#GAP-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+

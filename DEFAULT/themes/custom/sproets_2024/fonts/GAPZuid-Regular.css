@@ -1,0 +1,13 @@
+/* Webfont: GAPZuid-Regular */@font-face {
+    font-family: 'GAPZuid';
+    src: url('GAPZuid-Regular.eot'); /* IE9 Compat Modes */
+    src: url('GAPZuid-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('GAPZuid-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('GAPZuid-Regular.woff') format('woff'), /* Modern Browsers */
+         url('GAPZuid-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('GAPZuid-Regular.svg#GAPZuid-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
