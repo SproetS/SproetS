@@ -1,0 +1,26 @@
+# Dutch translation of Block Styles (2.0.4)
+# Copyright (c) 2023 by the Dutch translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Block Styles (2.0.4)\n"
+"POT-Creation-Date: 2023-07-02 17:48+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Dutch\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "None"
+msgstr "Geen"
+msgid "Text"
+msgstr "Tekst"
+msgid "Close"
+msgstr "Sluiten"
+msgid "Block ID"
+msgstr "Blok-ID"
+msgid "Classes"
+msgstr "Klassen"
+msgid "Styles"
+msgstr "Stijlen"

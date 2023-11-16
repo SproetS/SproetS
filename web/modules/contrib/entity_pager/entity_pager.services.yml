@@ -1,0 +1,4 @@
+services:
+  entity_pager.factory:
+    class: Drupal\entity_pager\EntityPagerFactory
+    arguments: ['@token', '@language_manager', '@current_route_match', '@request_stack']

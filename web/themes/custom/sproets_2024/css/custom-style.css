@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+/*!
+ * Style for Bootstrap 5 'SproetS 2024' subtheme
+ * https://sproets.nl
+ */
+
+
+/* --- Layout --- */
+
+
+/* --- Container --- */
+
+.container-960 {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2 rem;
+}
+
+
+
+/* --- Fonts --- */
+
+
+/* - Regular - */
+
+@font-face {
+  font-family: "GAP Zuid";
+  src:
+    local("GAP Zuid"),
+    url("../fonts/GAPZuid-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GAP Zuid";
+  src:
+    local("GAP Zuid"),
+    url("../fonts/GAPZuid-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GAP Zuid";
+  src:
+    local("GAP Zuid"),
+    url("../fonts/GAPZuid-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "GAP Zuid";
+  src:
+    local("GAP Zuid"),
+    url("../fonts/GAPZuid-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* - Monospace - */
+
+@font-face {
+  font-family: "GAP Mono";
+  src:
+    local("GAP Mono"),
+    url("../fonts/GAPMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GAP Mono";
+  src:
+    local("GAP Mono"),
+    url("../fonts/GAPMono-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GAP Mono";
+  src:
+    local("GAP Mono"),
+    url("../fonts/GAPMono-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "GAP mono";
+  src:
+    local("GAP mono"),
+    url("../fonts/GAPmono-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  font-family: "GAP Zuid";
+  font-feature-settings: "calt" 1, "liga" 1, "rlig" 1, "rvrn" 1, "kern" 1, "rclt" 1, "dlig" 1, "onum" 1;
+}
+
+code,
+pre {
+  font-family: "GAP Mono";
+  font-feature-settings: 0;
+}
+
+
+
+
+
+
+/* --- Typografie --- */
+
+
+p {
+
+}
+
+blockquote {
+  font-style: italic;
+  padding-left: 1em;
+  border-left: 1px solid #aaa;
+}
+
+
+.navbar-brand .site-slogan {
+  font-size: 1.4rem;
+  color: #808080;
+}
+
+.carousel-caption h3 {
+  font-weight: 700;
+}
+
+.carousel-caption a {
+  color: #fff;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px #808080;
+}
+
+
+/* --- NavBar --- */
+
+.navbar-brand .site-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* --- Blokken --- */
+
+video,
+.media
+.media-oembed-content {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  text-align: center;
+  /*background-color: #444;*/
+}
+
+
+#block-sproets-2024-page-title {
+  padding-top: 1em;
+}
+
+.site-logo img {
+  width: auto;
+  height: 64px;
+}
+
+
+
+
+
+/* --- Admin Ui ---  */
+
+body.adminimal,
+.adminimal,
+.toolbar {
+  font-family: "GAP Zuid" !important;
+  font: "GAP Zuid" !important;
+  font-feature-settings: "calt" 1, "liga" 1, "rlig" 1, "rvrn" 1, "kern" 1, "rclt" 1, "dlig" 1, "onum" 1;
+}
+
+
+#toolbar-administration {
+  font-family: "GAP Zuid" ;
+  font-feature-settings: "calt" 1, "liga" 1, "rlig" 1, "rvrn" 1, "kern" 1, "rclt" 1, "dlig" 1, "onum" 1;
+  font-size: medium;
+}

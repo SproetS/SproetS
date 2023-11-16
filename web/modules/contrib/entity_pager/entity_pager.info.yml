@@ -1,0 +1,13 @@
+name: Entity Pager
+type: module
+description: 'Provides Next and Previous navigation on entities.'
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+package: Navigation
+dependencies:
+  - drupal:views
+
+# Information added by Drupal.org packaging script on 2022-09-24
+version: '2.0.0-alpha1'
+project: 'entity_pager'
+datestamp: 1664034788
